@@ -1,7 +1,7 @@
 <?php
 
-    class Connectio{
+    class Connection{
         public function dbConnect(){
-            return new PDO("mysql:host=localhost; dbname=Login", "root", "");
+            return new PDO("mysql:host=localhost; dbname=login", "root", "");
         }
     }

@@ -10,7 +10,7 @@ class User{
 
     public function Login($name, $pass) {
         if(!empty($name) && !empty($pass)) {
-            $st = $this->db->prepare("SELECT * FROM users WHERE name=? and pass?");
+            $st = $this->db->prepare("SELECT * FROM userss WHERE name=? and pass?");
             $st->bindParam(1, $name);
             $st->bindParam(2, $pass);
             $st->execute();
