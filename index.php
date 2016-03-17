@@ -6,7 +6,7 @@
         $pass = $_POST['pass'];
 
         $object = new User();
-        $object->Login($user, $pass);
+        $object->Login($name, $pass);
     }
 ?>
 <!DOCTYPE html>
